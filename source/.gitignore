@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# OS junk
+.DS_Store
+
+# Ignore tmp stuff
+tmp/*
+!tmp/.gitkeep

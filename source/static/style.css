@@ -1,0 +1,119 @@
+:root {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0b0f14;
+    color: #e8eef6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.header h1 {
+    margin: 0 0 6px;
+    font-size: 24px;
+}
+
+.muted {
+    color: #9fb0c3;
+}
+
+.panel {
+    background: #111827;
+    border: 1px solid #1f2a3a;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.row {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.filename {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filename input {
+    width: 220px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #223047;
+    background: #0b1220;
+    color: inherit;
+}
+
+.suffix {
+    opacity: 0.8;
+}
+
+.editor {
+    height: 420px;
+    border-radius: 12px;
+    border: 1px solid #223047;
+    overflow: hidden;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #2a3a55;
+    background: #162338;
+    color: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.output {
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #223047;
+    background: #0b1220;
+    min-height: 160px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .editor {
+        height: 360px;
+    }
+}

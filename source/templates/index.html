@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GCC as a Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+{% set filenames = [
+"hello_athack2026",
+"flag_spitting",
+"flag_teasing",
+"trust_me_bro",
+"why_so_angry",
+] %}
+{% set filename = (filenames | random) ~ ".c" %}
+
+<main class="container">
+    <h1>GCC as a Service</h1>
+
+    <div class="panel">
+        <label>File name</label>
+        <div class="filename">
+            <input id="filename" value="{{ filename }}">
+        </div>
+
+        <label>C Code</label>
+        <div id="editor" class="editor"></div>
+
+        <div class="actions">
+            <button id="btnFormat">Format</button>
+            <button id="btnCompile">Compile</button>
+            <button id="btnRun">Compile & Run</button>
+        </div>
+    </div>
+
+    <div class="panel grid">
+        <div>
+            <h3>Compile Output</h3>
+            <pre id="compileOutput" class="output muted"></pre>
+        </div>
+        <div>
+            <h3>Program Output</h3>
+            <pre id="runOutput" class="output muted"></pre>
+        </div>
+    </div>
+</main>
+
+<script type="module" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
