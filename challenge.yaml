@@ -36,7 +36,7 @@ tags:
   # Indicates that this challenge is deemed beginner-friendly
   # - beginner
   # Indicates that this challenge is sponsored
-  - sponsored
+  # - sponsored
   # Indicates that this challenge is exclusive to a specific bracket
   # - exclusive-beginner
   # - exclusive-regular
