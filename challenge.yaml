@@ -12,7 +12,7 @@ category: "Web"
 # DO NOT remove the vertical character "|" (aka pipe character)
 description: |
   GCC-as-a-Service? This sounds like a horrible idea.
-  
+
   [Start your challenge instance](https://instancer.athackctf.com/chall2026-gcc-as-a-service/create)
 
 # The field connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
