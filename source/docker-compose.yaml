@@ -1,0 +1,11 @@
+name: chall2026-gcc-as-a-service
+
+services:
+  gcc-as-a-service:
+    image: athack-ctf/chall2026-gcc-as-a-service:latest
+    container_name: chall2026-gcc-as-a-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2026:2026"
