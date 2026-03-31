@@ -1,4 +1,4 @@
-# challeng.yaml MUST be placed at the root of the challenge repo.
+# challenge.yaml MUST be placed at the root of the challenge repo.
 
 # Challenge Name (for single flag challenges)
 name: "GCC as a Service"
@@ -43,7 +43,7 @@ tags:
 
 # Scoring (we'll be using dynamic scoring everywhere!)
 type: dynamic
-# Mandatory (make it equal to the minimum value for consistency)
+# Mandatory (make it equal to the maximum value for consistency)
 value: 500
 # Parameters of dynamic scoring
 extra:
@@ -51,7 +51,7 @@ extra:
   initial: 500
   # Minimum points after decay
   minimum: 50
-  # Number of solves to reach minimum (75% of expect number of active teams form both brackets)
+  # Number of solves to reach minimum (75% of the expected number of active teams from both brackets)
   decay: 20
   # We'll stick exclusively to logarithmic
   function: linear

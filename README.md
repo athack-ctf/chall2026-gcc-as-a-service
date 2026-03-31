@@ -1,25 +1,80 @@
-# Chall - GCC as a Service
+# @Hack 2026: GCC as a Service
 
-> A challenge around a web IDE wrapping GCC.
+> Authored by [Anis](https://github.com/AnixPasBesoin).
 
-## Challenge Type
+- **Category**: `Web`
+- **Solves**: `18/120`
+- **Tags**: `none`
+- **Protocol**: `http`
 
-- [X] **ON**line
+> GCC-as-a-Service? This sounds like a horrible idea.
+>
 
-## Design Type
+## Files
 
-- [X] **White**-Box
+- **[Download: code.zip](https://github.com/athack-ctf/chall2026-gcc-as-a-service/raw/refs/heads/main/offline-artifacts/code.zip)**
 
-## Designer
+## Access a dockerized instance
 
-- Anis
+Run challenge container using docker compose
 
-## Description
+```
+docker compose up -d
+```
 
-Participants have to figure out a way of bypassing a cleanup mechanism 
-preventing custom C code from running on the backend.
+Open below URL on your browser
+
+```
+http://localhost:53008/
+```
+
+<details>
+<summary>
+How to stop/restart challenge?
+</summary>
+
+To stop the challenge run
+
+```
+docker compose stop
+```
+
+To restart the challenge run
+
+```
+docker compose restart
+```
+
+</details>
+
+## Reveal Flag(s)
+
+Did you try solving this challenge?
+<details>
+<summary>
+Yes
+</summary>
+
+Did you **REALLY** try solving this challenge?
+
+<details>
+<summary>
+Yes, I promise!
+</summary>
+
+- Flag 1: `ATHACKCTF{D0_N0t_ArGu3_with_ArG_Inj3cti0N5}`
+
+</details>
+</details>
 
 
-## Category
+---
 
-- `web`
+## About @Hack
+
+[@Hack](https://athackctf.com/) is an annual CTF (Capture The Flag) competition hosted
+by [HEXPLOIT ALLIANCE](https://hexploit-alliance.com/) and [TECHNATION](https://technationcanada.ca/) at Concordia
+University in Montreal, Canada.
+
+---
+[Check more challenges from @Hack 2026](https://github.com/athack-ctf/AtHackCTF-2026-Challenges).
